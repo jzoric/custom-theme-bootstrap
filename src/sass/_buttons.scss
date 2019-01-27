@@ -1,0 +1,20 @@
+.my-button {
+  @extend .btn;
+  @include button-size(10px, 30px, 16px, 1, 0);
+  line-height: 1.5;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+    @include animate-click();
+    color: white;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+    @include animate-click();
+  }
+}

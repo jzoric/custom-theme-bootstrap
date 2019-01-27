@@ -1,0 +1,37 @@
+$almost-black: #1c2026;
+$carbon-black: #252a33;
+$anthracite: #383f49;
+$medium-grey: #697582;
+$basic-grey: #99a5b3;
+$ash-grey: #c0c8d0;
+$stone-grey: #d9dfe4;
+$dust: #f6f6f7;
+$white: #ffffff;
+
+/*SECONDARY COLORS*/
+$mbc-blue: #00adef;
+$mbc-blue-01: #0089be;
+$mbc-blue-02: #009bd6;
+$mbc-blue-03: #00adef;
+$mbc-blue-04: #2bbbf1;
+$mbc-blue-05: #57c9f5;
+$mbc-blue-06: #87d8f7;
+$mbc-blue-07: #b2e6fa;
+
+/*INDICATION COLORS*/
+$success: #0ae6ab;
+$info: #0181bb;
+$warning: #f3e537;
+$error: #e84d47;
+
+$theme-colors: (
+  "primary": $almost-black,
+  "secondary": $white,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $error,
+  "light": $white,
+  "dark": $almost-black,
+  "cool": red
+);
