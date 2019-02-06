@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = (baseConfig, env, defaultConfig) => {
 
@@ -12,6 +13,16 @@ module.exports = (baseConfig, env, defaultConfig) => {
     loaders: [require.resolve('@storybook/addon-storysource/loader')],
     enforce: 'pre',
   });
+
+  defaultConfig.plugins.push(
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.$': 'jquery',
+        'window.jQuery': 'jquery',
+        Popper: ['popper.js', 'default']
+    })
+  );
 
   return defaultConfig;
 };
