@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/html';
 import { withOptions } from '@storybook/addon-options';
 import "../src/sass/my-theme.scss";
+import '@fortawesome/fontawesome-free/css/all.css'
 import "bootstrap";
 
 addDecorator(withOptions({
